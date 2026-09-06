@@ -1,0 +1,121 @@
+[
+  {
+    "id": "reasoning",
+    "kind": "positive",
+    "request": "Audit this reasoning for bullshit: are we answering the real question, or defending convenient assumptions?",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "answer",
+    "kind": "positive",
+    "request": "Check this answer for unsupported certainty and replace any bullshit with a supported claim or explicit uncertainty.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "review_check",
+    "kind": "positive",
+    "request": "Run stop-bullshit on this design review and on the reviewer comments themselves.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "explicit",
+    "kind": "positive",
+    "request": "Use stop-bullshit to check this draft before I send it.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "ordinary",
+    "kind": "negative",
+    "request": "Fix the spelling of a local variable in a Python utility.",
+    "required": [],
+    "forbidden": [
+      "stop-bullshit"
+    ]
+  },
+  {
+    "id": "humanizer",
+    "kind": "adjacent",
+    "request": "Make this paragraph sound more natural without changing its verified factual content.",
+    "required": [
+      "humanizer"
+    ],
+    "forbidden": [
+      "stop-bullshit"
+    ]
+  },
+  {
+    "id": "pr_owner",
+    "kind": "adjacent",
+    "request": "Review someone else's GitHub PR and prepare pending inline comments.",
+    "required": [
+      "gh-review-other-pr"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "pr_body",
+    "kind": "adjacent",
+    "request": "Rewrite the body of this technical PR using its supplied experiment results.",
+    "required": [
+      "write-technical-pr"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "skill_making",
+    "kind": "adjacent",
+    "request": "Create a reusable skill for auditing truthfulness.",
+    "required": [
+      "skill-maker"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "reaction_direct",
+    "kind": "positive",
+    "request": "Stop bullshitting me. You still have not answered whether the cache can serve stale data after invalidation.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "reaction_evasion",
+    "kind": "positive",
+    "request": "You're dodging the question. Stop talking around it and tell me what you actually know.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "reaction_confidence",
+    "kind": "positive",
+    "request": "That sounds made up. Why are you so confident when you haven't shown any evidence?",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "tone_only",
+    "kind": "negative",
+    "request": "Please make this verified answer sound warmer; keep the reasoning and claims unchanged.",
+    "required": [],
+    "forbidden": [
+      "stop-bullshit"
+    ]
+  }
+]
