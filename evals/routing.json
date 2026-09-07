@@ -117,5 +117,14 @@
     "forbidden": [
       "stop-bullshit"
     ]
+  },
+  {
+    "id": "conduct",
+    "kind": "positive",
+    "request": "Audit your own actions for bullshit: have you actually advanced the task and verified your progress claims, or just performed busywork?",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
   }
 ]
