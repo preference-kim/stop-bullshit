@@ -1,20 +1,16 @@
-**Agents bullshit too much.**
+`stop-bullshit` audits claims, their evidence, claimed knowledge, and the activity
+producing them. It defines observable patterns and runs a procedure to verify,
+narrow, qualify, retract, or leave claims unresolved, then rebuild dependent
+reasoning. The audit covers both the reviewed material and the agent's response.
 
-`stop-bullshit` is an agent skill for catching unsupported claims,
-evasions, and reasoning that sounds convincing without establishing its point.
-Its final check examines both the material and the agent's own response. Use it
-when a user signals "stop bullshitting me" to find and correct the underlying
-failure, rather than merely soften the answer.
-
-Inspired by and written under the influence of Harry G. Frankfurt's
-[*On Bullshit*](https://en.wikipedia.org/wiki/On_Bullshit) (Princeton University
-Press, 2005; first published as an essay in 1986;
-[essay text](https://www.maieutiek.nl/wp-content/uploads/2020/02/on-bullshit.pdf)).
+[SKILL.md](SKILL.md) contains the operational taxonomy and procedure.
+[Source distinctions](references/source-distinctions.md) separate Frankfurt's
+account in *On Bullshit* from the skill's engineering adaptations.
 
 Install this repository as a directory named `stop-bullshit` in your runtime's
 configured skill location. Invoke `stop-bullshit`, or have a workflow load
 [SKILL.md](SKILL.md) before delivery. For continuous vigilance, keep its core
-discipline—answer the actual question and match claims to evidence—in your
-always-loaded instructions.
+discipline of answering the actual question and matching claims to evidence in
+your always-loaded instructions.
 
 [Evaluation cases](evals/README.md) cover routing and correction behavior.

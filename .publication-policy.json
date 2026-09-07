@@ -1,0 +1,12 @@
+{
+  "base_commit": "724abf7db5d73dab120ffe2a896f962545d306ce",
+  "paths": [
+    ".publication-policy.json",
+    "README.md",
+    "SKILL.md",
+    "evals/README.md",
+    "evals/behavior.json",
+    "evals/routing.json",
+    "references/source-distinctions.md"
+  ]
+}
