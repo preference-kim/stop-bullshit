@@ -126,5 +126,23 @@
       "stop-bullshit"
     ],
     "forbidden": []
+  },
+  {
+    "id": "sloppy_work",
+    "kind": "positive",
+    "request": "You changed unrelated code and skipped the error path. Reflect on your work and correct the approach before continuing.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "prevent_pointless_work",
+    "kind": "positive",
+    "request": "Before you continue development, audit whether your proposed actions address the bug or just create work.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
   }
 ]

@@ -1,20 +1,24 @@
 ---
 name: stop-bullshit
-description: Use when the user calls an answer bullshit or signals evasion, empty rhetoric, or unearned certainty. Also use for explicit truthfulness audits and required final checks in reasoning, answers, writing, and reviews. Complements domain workflows; not for style-only rewrites.
+description: Use to audit or correct sloppy, pointless, or unjustified agent work during development and similar tasks, including unsupported claims, unverified progress, or ineffective actions. Trigger on complaints about bullshit, requests for self-reflection, and required final checks. Complements domain workflows; not for style-only edits.
 ---
 
 # Stop Bullshit
 
-Audit your own reasoning, communication, and conduct. Catch claims made without
-establishing their truth, pretended knowledge or verification, manufactured
-confidence, hidden uncertainty, and activity that only creates an appearance of
-progress. Correct the claim **and** the way you are doing the task. Success is a
-repaired answer and supported work, with remaining limits stated accurately.
+Prevent and correct sloppy, pointless, or unjustified agent work during
+development and similar tasks. Audit your own reasoning, communication, and
+conduct before avoidable failures occur; when they occur, reflect on the evidence
+and repair both the result and the way you are doing the task. This includes
+unsupported claims, pretended verification, manufactured confidence, hidden
+uncertainty, careless changes, and activity that only creates apparent progress.
 
-Frankfurt's *On Bullshit* informs the check for an apparent inquiry whose conduct
-is not constrained by truth. The procedure below is an engineering adaptation.
-Read [source distinctions](references/source-distinctions.md) when checking that
-attribution or revising the design; the essay does not validate this procedure.
+Frankfurt's *On Bullshit* inspired the attention to truth and represented
+activity. Here, “bullshit” has the practical, colloquial scope above: accurately
+reporting careless or pointless work does not make that work justified. Success
+means useful work that meets the task's criteria, or an accurate account of what
+remains unresolved and why. Read [source distinctions](references/source-distinctions.md)
+when checking attribution or revising the design; the essay does not validate
+this procedure.
 
 ## 1. Anchor the audit in the task and the record
 
@@ -83,6 +87,13 @@ Before continuing substantial work, ask:
   it advances or the uncertainty it resolves, and how possible results affect
   the next decision. If it does neither, stop or replace it. A necessary setup
   step can qualify by enabling a specific required check; explain that dependency.
+  A well-chosen experiment can advance the task by refuting a hypothesis.
+- **Does this change respect the actual contract?** For development work, inspect
+  the relevant preconditions, normal and error paths, state changes, ownership,
+  and affected callers. Check the changed behavior against the requirement. If
+  you skipped a material path, made unrelated edits, or added complexity without
+  a task-relevant reason, repair that gap and check the affected behavior. A
+  clean build alone does not establish that the requested behavior is correct.
 - **Am I doing the decisive work?** Repeated searches, benchmarks, refactors,
   plans, formatting, or status reports can leave the user's question untouched.
   Select a relevant discriminating check or required repair. Perform it when
@@ -127,6 +138,16 @@ These overlapping reminders do not require a classification step. A label or a
 speculative account of motives supplies neither evidence nor a repair.
 
 ## 4. Repair, then audit the repair
+
+When work goes wrong, reconstruct:
+
+`intended outcome → actual action → observed failure → missed check or constraint
+→ corrective action`
+
+Use the available record to identify what should change in your approach. If
+the cause is unknown, select the observation that would distinguish plausible
+causes. Reflection must lead to a concrete repair or a better next check; an
+apology or promise to be more careful is insufficient.
 
 For each material gap, **verify, correct, narrow, qualify with a stated basis,
 retract, remove, or explicitly leave unresolved**. Choose the disposition that

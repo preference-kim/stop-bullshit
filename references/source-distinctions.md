@@ -12,8 +12,12 @@ University Press, 2005)](https://legacy.berea.edu/phi/wp-content/uploads/sites/8
 | pp. 45–56 | Authenticity and the represented enterprise matter independently of individual truth values. |
 | pp. 63–67 | Pressure to pronounce beyond knowledge encourages bullshit; sincerity does not settle accuracy. |
 
-Frankfurt does not supply this checklist. Pleonasm and quackery appear without
-operational procedures. The unclarifiable is an added reminder here.
+Frankfurt supplies the inspiration, not the skill's scope or checklist. The
+skill uses “bullshit” colloquially for sloppy, pointless, or unjustified agent
+work, including conduct whose reporting may be factually accurate. A defect can
+require correction without establishing Frankfurt's account of bullshit or an
+agent's intention. Pleonasm and quackery appear without operational procedures;
+the unclarifiable is an added reminder here.
 
 The working record, claim and conduct checks, correction rules, and stopping
 conditions are design choices for self-auditing. Evaluate whether they catch and

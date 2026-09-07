@@ -1,7 +1,12 @@
-`stop-bullshit` is a self-audit of an agent's reasoning, communication, and conduct.
-It checks claims against evidence, accounts of work against actual results, and
-actions against the user's question and acceptance criteria. Detected failures
-require substantive correction and any necessary authorized work.
+`stop-bullshit` helps agents prevent and correct sloppy, pointless, or unjustified
+work during development and similar tasks. Inspired by *On Bullshit*, it uses
+“bullshit” in that practical, colloquial sense. It audits reasoning, communication,
+and conduct: claims need evidence, changes need a task-relevant justification,
+and actions need to advance the requested outcome or resolve uncertainty.
+
+When work goes wrong, the agent identifies the observed failure and missed check
+or constraint, repairs the affected work, and checks the result. Truthful reporting
+alone does not excuse careless or pointless work.
 
 [SKILL.md](SKILL.md) contains the checks, repair loop, and completion criteria.
 [Source distinctions](references/source-distinctions.md) separate Frankfurt's

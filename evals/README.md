@@ -30,6 +30,8 @@ The cases exercise these behaviors:
 | Unsupported assertions and confidence are corrected at their actual scope | `hedging`, `citation_scope`, `empirical_precision`, `quack_method` |
 | Process reports match the record without invented successes or confessions | `true_result_false_provenance`, `fabricated_tool_output`, `process_record_incomplete`, `scope_of_success` |
 | Actions address the decisive question and respond to evidence | `conduct_wrong_check`, `conduct_repeat_without_change`, `conduct_finish_authorized`, `counterevidence` |
+| Truthful reports do not excuse careless work; reflection leads to repair | `truthful_sloppy_work`, `reflect_on_skipped_check` |
+| A refuted hypothesis can be useful progress | `informative_failed_experiment` |
 | Necessary setup remains useful; completed work does not provoke gratuitous activity | `conduct_necessary_setup`, `conduct_stop_when_satisfied` |
 | A missing authorized repair and verification are actually performed | `conduct_live_repair` |
 | Corrections propagate through reasoning and survive editing | `enterprise_dependency_repair`, `corrected_output_regression` |
