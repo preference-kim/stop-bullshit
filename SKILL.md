@@ -1,31 +1,44 @@
 ---
 name: stop-bullshit
-description: Use to audit or correct sloppy, pointless, or unjustified agent work during development and similar tasks, including unsupported claims, unverified progress, or ineffective actions. Trigger on complaints about bullshit, requests for self-reflection, and required final checks. Complements domain workflows; not for style-only edits.
+description: Use when the user calls an agent response bullshit, evasive, empty, or unjustifiably confident; requests self-reflection on reasoning or conduct; or requires a final audit. Identify the exact failure, explain its supported cause, and execute recovery toward the intended outcome. Complements domain workflows; not for style-only edits or philosophy discussion.
 ---
 
 # Stop Bullshit
 
-Prevent and correct sloppy, pointless, or unjustified agent work during
-development and similar tasks. Audit your own reasoning, communication, and
-conduct before avoidable failures occur; when they occur, reflect on the evidence
-and repair both the result and the way you are doing the task. This includes
-unsupported claims, pretended verification, manufactured confidence, hidden
-uncertainty, careless changes, and activity that only creates apparent progress.
+Audit where your reasoning, communication, or conduct stopped being constrained
+by evidence and the user's intended outcome. Identify the exact failure, explain
+its supported cause, and execute the repair. Check for unsupported claims,
+pretended verification, manufactured confidence, hidden uncertainty, careless
+changes, and activity that only creates apparent progress.
 
-Frankfurt's *On Bullshit* inspired the attention to truth and represented
-activity. Here, “bullshit” has the practical, colloquial scope above: accurately
-reporting careless or pointless work does not make that work justified. Success
-means useful work that meets the task's criteria, or an accurate account of what
-remains unresolved and why. Read [source distinctions](references/source-distinctions.md)
-when checking attribution or revising the design; the essay does not validate
-this procedure.
+Frankfurt's *On Bullshit* motivates concern for truth and the activity being
+represented. This skill also requires fidelity to the user's authentic intent
+and expected outcome, established from the request and context. Keep those
+obligations distinct: evidence governs factual claims; intent governs relevance
+and completion. Accurate reporting does not justify pointless work, and satisfying
+a user's preference does not establish a factual claim. Read
+[source distinctions](references/source-distinctions.md) when checking attribution
+or revising the design; these operational rules are adaptations.
 
-## 1. Anchor the audit in the task and the record
+When the user replies **“Bullshit.”** or challenges evasion, empty explanation,
+or unearned certainty, revisit the actual question, your answer and actions,
+the reaction, and the evidence. Treat a severed connection to truth or the task
+as the working hypothesis to investigate, not a verdict to confess. Retain a
+challenged conclusion when its evidence survives review. Do not invent a cause
+for the reaction, concede to appease, or replace recovery with a tone change.
+
+## 1. Identify the failure in the task and the record
 
 State the actual question or outcome, constraints, authorized scope, and
 acceptance criteria. Identify the central unresolved question. A claim or action
 is material when changing it would change the answer, decision, next action, or
 trust in reported work.
+
+Locate the exact assertion, omission, inferential step, or action at issue and
+connect it to the unmet criterion. Quote or point to it when available; do not
+replace identification with “my answer was vague” or assume the whole response
+was wrong. If the intended outcome is ambiguous, use the available context and
+clarify only the uncertainty that changes the repair.
 
 Inspect what you have said, what you have done, and what you propose to do next.
 In a review, also inspect the supplied material; your findings, proposed fixes,
@@ -45,7 +58,7 @@ estimate, assumption, definition, and value judgment. Distinguish evidence
 available when a claim was made from evidence obtained during this audit. A
 visible ledger is optional; an unsupported field stays unknown.
 
-## 2. Check what you are asserting
+## 2. Analyze the assertions and their basis
 
 Apply these checks to material assertions and to implications or omissions that
 invite a reader to infer knowledge, causation, verification, or completion.
@@ -73,7 +86,7 @@ meaning and appropriate support: empirical claims admit discriminating checks;
 definitions, proofs, interpretations, and value judgments need their appropriate
 premises or criteria. Do not demand empirical falsification of every statement.
 
-## 3. Check whether your conduct serves the task
+## 3. Trace the failure to the way you conducted the task
 
 The underlying **enterprise** is the activity you are actually carrying out.
 Compare the intended activity—investigating, explaining, repairing, evaluating,
@@ -116,12 +129,18 @@ Before continuing substantial work, ask:
   its effect on the answer, and the next check needed. Do not call an unresolved
   task finished or expand it into unnecessary work to appear thorough.
 
-For a detected substitution, identify the missing constraint on the process:
-what evidence, criterion, or outcome should have changed the action but did not?
-Restore that constraint. For example, rerunning a throughput benchmark cannot
-settle post-invalidation freshness when it never exercises invalidation; inspect
-the ordering contract and relevant read/invalidation behavior. A passing targeted
-case still does not prove every interleaving safe.
+For a detected failure, distinguish its **symptom** from the **process that
+produced or preserved it**. Which evidence, criterion, or outcome should have
+changed the assertion or action but did not? Identify that point in the record
+and explain how it led to the defect. “I was careless,” “I hallucinated,” or “I
+wanted to please you” alone does not establish a cause. If the record explains
+only the missed constraint, stop there; an unknown internal cause remains unknown.
+
+For example, rerunning a throughput benchmark cannot settle post-invalidation
+freshness when it never exercises invalidation. The process failure is using a
+check of throughput to discharge a requirement about freshness. Restore that
+constraint by inspecting the ordering contract and relevant read/invalidation
+behavior. A passing targeted case still does not prove every interleaving safe.
 
 Use pattern names only when they help select a check or repair:
 
@@ -134,20 +153,25 @@ Use pattern names only when they help select a check or repair:
   information check. Recover an available definition or source; preserve useful
   qualifications and remove unsupported interpretations or empty premises.
 
-These overlapping reminders do not require a classification step. A label or a
-speculative account of motives supplies neither evidence nor a repair.
+These overlapping reminders are not a taxonomy from the essay and do not require
+a classification step. Correct an honest error without declaring it bullshit.
+A label or a speculative account of motives supplies neither evidence nor a repair.
 
-## 4. Repair, then audit the repair
+## 4. Establish and execute the recovery enterprise
 
-When work goes wrong, reconstruct:
+For a demonstrated material defect, establish a bounded undertaking to restore
+the connection to evidence and the intended outcome. Define the defect, governing
+constraint, necessary corrective actions, and what result would demonstrate
+sufficient repair. Keep this compact; naming an enterprise is not progress. Reconstruct:
 
 `intended outcome → actual action → observed failure → missed check or constraint
 → corrective action`
 
 Use the available record to identify what should change in your approach. If
 the cause is unknown, select the observation that would distinguish plausible
-causes. Reflection must lead to a concrete repair or a better next check; an
-apology or promise to be more careful is insufficient.
+causes. Correct a demonstrated defect when feasible even if its deeper cause
+remains unknown. Reflection must lead to a concrete repair or a necessary next
+check; an apology or promise to be more careful is insufficient.
 
 For each material gap, **verify, correct, narrow, qualify with a stated basis,
 retract, remove, or explicitly leave unresolved**. Choose the disposition that
@@ -164,8 +188,10 @@ apologizing, or proposing work does not substitute for the required correction.
 After the last substantive or stylistic edit, inspect each new factual clause,
 including those inside proposed fixes. Tie it to supplied evidence, a checked
 result, or a valid derivation. Otherwise remove it or make the necessary condition
-explicit. Unspecified is not absent: an unspecified retry limit does not establish
-unlimited retries. Do not repair one unsupported claim by introducing another.
+explicit. Unspecified, unavailable, and uninspected do not mean absent: an
+excerpt's silence does not establish what the full source omits. Preserve the
+source's qualifications; a check that could help distinguish causes is not
+guaranteed to settle them. Do not repair one unsupported claim by introducing another.
 
 Finish when the following observable conditions hold:
 
@@ -177,20 +203,15 @@ Finish when the following observable conditions hold:
 - The correction contains no new unsupported facts, false process claims, or
   meaningless premises. Additional activity would require a task-relevant reason.
 
-For an explicit audit, report the material defect, its evidence and impact, the
-correction made, and any remaining necessary action or limit. Include the
-corrected answer when requested. For an embedded check, deliver the workflow's
-artifact without a ritual audit report. Do not claim general truthfulness from a
-completed checklist.
+For an explicit audit or user-triggered recovery, briefly report the exact
+defect, its evidence and impact, the supported process cause or unresolved causal
+question, the correction made, and any remaining necessary action or limit.
+Deliver the corrected answer or artifact and resume the original task within
+scope. For an embedded check, deliver the workflow's artifact without a ritual
+audit report. Do not claim general truthfulness from a completed checklist.
 
 Keep the workflow's authority boundaries: reviewing an artifact does not
 authorize editing it or posting feedback. A read-only leaf reviewer must not
 edit, post, or delegate; report the unresolved premise to the orchestrator. Use an
 independent critic for a specific unresolved issue only when the parent workflow
 permits it; agreement is not validation.
-
-When the user says “stop bullshitting me,” re-read the actual question, your
-answer and actions, the reaction, and the evidence. Identify the demonstrated
-failure, briefly acknowledge it, correct it, and resume the original task. Retain
-a challenged conclusion when its evidence survives review. Do not invent a cause
-for the reaction, concede to appease, or replace the repair with a tone change.

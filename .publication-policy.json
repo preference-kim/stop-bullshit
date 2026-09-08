@@ -1,6 +1,7 @@
 {
   "base_commit": "724abf7db5d73dab120ffe2a896f962545d306ce",
   "paths": [
+    ".gitignore",
     ".publication-policy.json",
     "README.md",
     "SKILL.md",

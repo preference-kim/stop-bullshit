@@ -1,5 +1,14 @@
 [
   {
+    "id": "reaction_single_word",
+    "kind": "positive",
+    "request": "Bullshit.",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
     "id": "reasoning",
     "kind": "positive",
     "request": "Audit this reasoning for bullshit: are we answering the real question, or defending convenient assumptions?",
@@ -39,6 +48,15 @@
     "id": "ordinary",
     "kind": "negative",
     "request": "Fix the spelling of a local variable in a Python utility.",
+    "required": [],
+    "forbidden": [
+      "stop-bullshit"
+    ]
+  },
+  {
+    "id": "philosophy_topic",
+    "kind": "negative",
+    "request": "Summarize Frankfurt's On Bullshit and explain how he distinguishes bullshit from lying.",
     "required": [],
     "forbidden": [
       "stop-bullshit"
