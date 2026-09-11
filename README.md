@@ -9,8 +9,10 @@ responses can conceal that the agent never answered the actual question.
 response lost its connection to truth and the task, explain what went wrong,
 and repair the work.
 
-1. **User trigger:** After a flawed response, the user replies, *“Bullshit.”*
-   The agent revisits the request, its response and actions, and the evidence.
+1. **User trigger:** The user asks what the agent meant—even neutrally—or
+   replies, *“Bullshit.”* The agent revisits the request, its response and actions,
+   and the evidence. Asking for clarification does not establish that the answer
+   was false.
 2. **Identification:** The agent pinpoints the claim, omission, or action that
    failed and its effect on the intended outcome.
 3. **Root cause analysis:** The agent defines the failure precisely and traces

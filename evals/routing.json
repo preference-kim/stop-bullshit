@@ -162,5 +162,77 @@
       "stop-bullshit"
     ],
     "forbidden": []
+  },
+  {
+    "id": "clarification_ko",
+    "kind": "positive",
+    "request": "그게 무슨 소리냐?",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "clarification_meaning_ko",
+    "kind": "positive",
+    "request": "무슨 말을 하는 거야?",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "clarification_neutral_ko",
+    "kind": "positive",
+    "request": "방금 답변이 잘 이해가 안 되는데, 무슨 뜻인지 다시 설명해 줄래?",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "clarification_en",
+    "kind": "positive",
+    "request": "What do you mean by your last answer?",
+    "required": [
+      "stop-bullshit"
+    ],
+    "forbidden": []
+  },
+  {
+    "id": "concept_ko",
+    "kind": "negative",
+    "request": "캐시 무효화가 무슨 뜻인지 설명해 줘.",
+    "required": [],
+    "forbidden": [
+      "stop-bullshit"
+    ]
+  },
+  {
+    "id": "concept_en",
+    "kind": "negative",
+    "request": "Explain what eventual consistency means.",
+    "required": [],
+    "forbidden": [
+      "stop-bullshit"
+    ]
+  },
+  {
+    "id": "translation_only",
+    "kind": "negative",
+    "request": "방금 답변을 한국어로 번역해 줘.",
+    "required": [],
+    "forbidden": [
+      "stop-bullshit"
+    ]
+  },
+  {
+    "id": "style_clarification",
+    "kind": "adjacent",
+    "request": "Make this paragraph easier to read without changing its verified meaning.",
+    "required": [],
+    "forbidden": [
+      "stop-bullshit"
+    ]
   }
 ]

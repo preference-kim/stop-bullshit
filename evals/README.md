@@ -8,7 +8,9 @@ public worktrees under the local agent-update state directory.
   must be present and forbidden routes absent. Domain workflows remain the
   orchestrator for their tasks. Check installed discovery separately; a supplied
   catalog is not a live routing test. A bare “Bullshit.” reaction should route
-  here; a request to discuss Frankfurt's essay alone should not.
+  here, as should a neutral question about what the agent meant. Standalone
+  concept explanations, translation, style edits, and discussion of Frankfurt's
+  essay alone should not.
 - `behavior.json`: apply `SKILL.md` to the fictional material, prior response,
   and work record. Return the concrete correction, any necessary next action,
   and remaining uncertainty. Keep findings about the material and the response

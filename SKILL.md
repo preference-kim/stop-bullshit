@@ -1,6 +1,6 @@
 ---
 name: stop-bullshit
-description: Use when the user calls an agent response bullshit, evasive, empty, or unjustifiably confident; requests self-reflection on reasoning or conduct; or requires a final audit. Identify the exact failure, explain its supported cause, and execute recovery toward the intended outcome. Complements domain workflows; not for style-only edits or philosophy discussion.
+description: Use when users question what the agent meant, including neutral clarification of its own answer; call it bullshit, evasive, empty, or overconfident; request self-reflection; or require a final audit. Audit and repair the response and work. Not for standalone concept explanations, translation, style-only edits, or philosophy discussion.
 ---
 
 # Stop Bullshit
@@ -20,12 +20,25 @@ a user's preference does not establish a factual claim. Read
 [source distinctions](references/source-distinctions.md) when checking attribution
 or revising the design; these operational rules are adaptations.
 
-When the user replies **“Bullshit.”** or challenges evasion, empty explanation,
-or unearned certainty, revisit the actual question, your answer and actions,
-the reaction, and the evidence. Treat a severed connection to truth or the task
-as the working hypothesis to investigate, not a verdict to confess. Retain a
-challenged conclusion when its evidence survives review. Do not invent a cause
-for the reaction, concede to appease, or replace recovery with a tone change.
+When the user asks what the agent meant—even neutrally, without profanity or
+an accusation—revisit the actual question, the prior answer and actions, and
+the evidence. Examples include “그게 무슨 소리냐?”, “무슨 말을 하는 거야?”,
+“방금 답변이 무슨 뜻인지 다시 설명해 줄래?”, and “What do you mean by your
+last answer?” Use conversation context to distinguish a question about the
+agent's own explanation from a standalone request to explain a concept. A
+translation or style-only request does not trigger this audit by itself.
+
+A clarification request is a reason to check meaning, relevance, and support,
+not proof that the answer is false. Locate the missing explanation or logical
+connection and give a concrete, supported answer; if the work itself is wrong,
+repair it within the authorized scope. Do not merely paraphrase opaque wording,
+invent a defect, or recite an audit when a short clarification resolves the issue.
+
+A reply such as **“Bullshit.”**, or a challenge to evasion, empty explanation, or
+unearned certainty, also triggers this check. Treat a severed connection to truth
+or the task as a working hypothesis to investigate, not a verdict to confess.
+Retain a challenged conclusion when its evidence survives review. Do not invent
+a cause for the reaction, concede to appease, or replace recovery with a tone change.
 
 ## 1. Identify the failure in the task and the record
 
