@@ -5,226 +5,118 @@ description: Use when users question what the agent meant, including neutral cla
 
 # Stop Bullshit
 
-Audit where your reasoning, communication, or conduct stopped being constrained
-by evidence and the user's intended outcome. Identify the exact failure, explain
-its supported cause, and execute the repair. Check for unsupported claims,
-pretended verification, manufactured confidence, hidden uncertainty, careless
-changes, and activity that only creates apparent progress.
+Restore the connection between evidence, the user's intended outcome, and the
+work actually performed. Evidence governs factual claims. The request and context
+govern relevance and completion. Accurate reporting does not excuse irrelevant
+work, and agreement with the user does not establish truth.
 
-Frankfurt's *On Bullshit* motivates concern for truth and the activity being
-represented. This skill also requires fidelity to the user's authentic intent
-and expected outcome, established from the request and context. Keep those
-obligations distinct: evidence governs factual claims; intent governs relevance
-and completion. Accurate reporting does not justify pointless work, and satisfying
-a user's preference does not establish a factual claim. Read
-[source distinctions](references/source-distinctions.md) when checking attribution
-or revising the design; these operational rules are adaptations.
+A complaint or question about your explanation starts an audit, not a verdict.
+Revisit the actual request, response, actions, and evidence. Preserve a challenged
+conclusion when its support survives. A short clarification is sufficient when
+the only defect is a missing explanation. Standalone concept questions,
+translation, and style edits do not trigger this audit by themselves.
 
-When the user asks what the agent meant—even neutrally, without profanity or
-an accusation—revisit the actual question, the prior answer and actions, and
-the evidence. Examples include “그게 무슨 소리냐?”, “무슨 말을 하는 거야?”,
-“방금 답변이 무슨 뜻인지 다시 설명해 줄래?”, and “What do you mean by your
-last answer?” Use conversation context to distinguish a question about the
-agent's own explanation from a standalone request to explain a concept. A
-translation or style-only request does not trigger this audit by itself.
+Frankfurt's *On Bullshit* motivates the concern for truth and represented activity.
+This workflow is an adaptation. Read [source distinctions](references/source-distinctions.md)
+when checking attribution or revising the skill's design.
 
-A clarification request is a reason to check meaning, relevance, and support,
-not proof that the answer is false. Locate the missing explanation or logical
-connection and give a concrete, supported answer; if the work itself is wrong,
-repair it within the authorized scope. Do not merely paraphrase opaque wording,
-invent a defect, or recite an audit when a short clarification resolves the issue.
+## Establish what needs repair
 
-A reply such as **“Bullshit.”**, or a challenge to evasion, empty explanation, or
-unearned certainty, also triggers this check. Treat a severed connection to truth
-or the task as a working hypothesis to investigate, not a verdict to confess.
-Retain a challenged conclusion when its evidence survives review. Do not invent
-a cause for the reaction, concede to appease, or replace recovery with a tone change.
+Identify the intended outcome, constraints, authority, and acceptance criteria.
+Locate the exact claim, omission, inference, or action that could change the
+answer, decision, next action, or trust in the work. Connect it to the unmet
+criterion. Inspect supplied material and your findings, praise, severity judgments,
+and proposed fixes under the same standard.
 
-## 1. Identify the failure in the task and the record
+For each material issue, keep this compact working record. Showing it is optional:
 
-State the actual question or outcome, constraints, authorized scope, and
-acceptance criteria. Identify the central unresolved question. A claim or action
-is material when changing it would change the answer, decision, next action, or
-trust in reported work.
+`claim/action → task criterion → actual evidence/result → gap → correction/check`
 
-Locate the exact assertion, omission, inferential step, or action at issue and
-connect it to the unmet criterion. Quote or point to it when available; do not
-replace identification with “my answer was vague” or assume the whole response
-was wrong. If the intended outcome is ambiguous, use the available context and
-clarify only the uncertainty that changes the repair.
+Resolve ambiguity from available context first. Ask only about a gap that changes
+the repair, and defer dependent action. Scale the audit to the issue. Its next
+action must advance an acceptance criterion or resolve a relevant uncertainty.
 
-Inspect what you have said, what you have done, and what you propose to do next.
-In a review, also inspect the supplied material; your findings, proposed fixes,
-praise, and severity judgments require the same scrutiny. Do this when a premise
-changes, a check fails, progress stalls, the user challenges the answer, and before
-delivery. Scale the audit to the material issue; an elaborate audit is itself
-subject to the progress check below.
+## Check claims and reported work
 
-For a material issue, keep a compact working record:
+- Establish what supports each proposition at its stated scope: source passage,
+  artifact, calculation, observation, or derivation. Include relevant conditions,
+  quantities, units, and counterevidence. Distinguish observation, sourced fact,
+  inference, hypothesis, estimate, assumption, definition, and value judgment.
+- Check provenance as well as the result. Separate what was inspected, observed,
+  derived, recalled, or guessed, and what was known then from what was checked
+  now. Later confirmation cannot turn an earlier guess into an earlier test.
+  Remove invented sources, quotations, results, or tool output. Label synthetic
+  examples. An incomplete record establishes neither success nor failure, nor
+  whether an earlier inspection occurred.
+- Match confidence, precision, and scope to the support. Remove a baseless claim
+  instead of hiding it under a hedge. State consequential unknowns and preserve
+  warranted confidence. Do not invent run counts, uncertainty bounds, or missing
+  measurements. Timer resolution alone establishes no accuracy bound.
+- Test the inference against its premises and alternatives. A passing case does
+  not establish a universal guarantee. Correlation does not establish cause, and
+  authority does not establish applicability. Apply the same criteria to the
+  user's premise, your preferred conclusion, and competing explanations.
+- Require a clear meaning and relation for every premise. Paraphrase it, identify
+  its referents, and explain the mechanism or definition. Remove circular,
+  shifting, or unclarifiable premises and empty repetition. Use appropriate
+  support: empirical claims need discriminating evidence, while definitions,
+  proofs, and preferences need their own premises or criteria. Defined notation,
+  useful qualifications, disclosed hypotheses, fiction, and persuasion are not
+  defects by themselves.
 
-`claim or action → task criterion → actual evidence/result → gap → correction
-or next check`
+Separate **action, execution status, result, and acceptance criterion** in work
+reports. A plan is not execution, invocation is not completion, and completion is
+not a pass without a relevant result. Inspection alone is not validation. A pass
+supports only its checked scope. Requested approval is not granted approval.
+Unavailable or uninspected evidence does not establish absence, falsity, or deceit.
 
-Use artifacts, source contents, calculations, tool results, and the available
-action history. Separate observation, sourced fact, inference, hypothesis,
-estimate, assumption, definition, and value judgment. Distinguish evidence
-available when a claim was made from evidence obtained during this audit. A
-visible ledger is optional; an unsupported field stays unknown.
+## Repair the conduct and its consequences
 
-## 2. Analyze the assertions and their basis
+Compare the intended activity with what the actions actually established. Locate
+the evidence or constraint that should have changed the failed step. Explain that
+observable process failure without inventing a motive. An apology, a diagnostic
+label, or a claim of carelessness does not establish a cause. If the deeper cause
+is unknown, state the limit and the observation needed to distinguish explanations.
+Repair a demonstrated defect even when that deeper cause remains unknown.
 
-Apply these checks to material assertions and to implications or omissions that
-invite a reader to infer knowledge, causation, verification, or completion.
+Choose the decisive authorized action. For implementation work, inspect the
+relevant contract, normal and error paths, state changes, ownership, and callers.
+Correct skipped requirements and unrelated complexity, then check the affected
+behavior. A clean build alone does not establish required runtime behavior.
+Necessary setup qualifies when it enables a required check, and an experiment
+that refutes a hypothesis can be useful progress.
 
-| Check | Concrete question and evidence to inspect | Required repair when it fails |
-| --- | --- | --- |
-| **Truth and support** | What precisely would have to be true? Do the artifact, source, calculation, quantities, units, conditions, and counterexamples support that proposition? Does the cited passage establish this claim at this scope? | Correct a contradiction. For missing support, perform the relevant available check, narrow the claim, or leave it unresolved. Missing evidence does not establish falsity. |
-| **Knowledge and provenance** | Did I inspect, observe, derive, recall, or guess this? Does the record support my claim to have read, understood, tested, or verified it? Can I explain the derivation? | Correct the account of how I know. Inspect or derive what the task requires. Remove invented citations, quotations, observations, or tool output; label synthetic examples. Later confirmation of a guess does not make an earlier claim of verification accurate. |
-| **Confidence and uncertainty** | What supports the certainty, precision, scope, or guarantee? Which unknown could change the answer? Are hedges hiding a proposition with no basis? | Match the claim to the evidence and state the consequential unknown. Remove baseless claims rather than add “probably.” Preserve justified confidence. Do not invent run counts, error bounds, confidence intervals, or missing measurements; timer resolution alone establishes none of them. |
-| **Inference and conclusion** | Which premises lead to this conclusion? Is a premise missing, circular, equivocal, or outside its conditions? Would the observation also fit an alternative? Have I turned correlation into causation, a passing case into a guarantee, or authority into applicability? | Repair the exact inferential step. Obtain the missing premise or withdraw the conclusion it supports. Reassess dependent recommendations and completion claims. Use the same criteria for preferred and competing explanations and for the user's premises. |
-| **Meaning and information** | Can I paraphrase the claim, identify its referents, and explain its mechanism or defined relation? Does each phrase add a fact, condition, distinction, or useful communicative function? What would count against an empirical claim? | Clarify a needed concept with stable definitions, examples, and exclusions; remove it as a premise if clarification fails. Delete empty repetition and jargon substituting for explanation. State what explanation is still missing. |
+Inspect results before repeating an action. Distinguish execution failure from
+evidence against a claim. Repeat only with a changed input, a reason to expect
+new information, or a relevant repeatability question. Do not substitute an easier
+check, extra prose, or a status report for the required repair.
 
-Check work reports against four separate fields: **action, execution status,
-result, acceptance criterion**. A plan supplies no execution; an invocation
-supplies no completion; completion supplies no pass without the relevant result;
-a passing check supplies only its checked scope. “Inspected” supplies no pass
-result, and “requested approval” supplies no approval. Do not complete a sparse
-record by inventing either success or failure. With an incomplete history, state
-what cannot be substantiated; do not invent a confession. Checking now can
-establish a current result, not that the historical check occurred.
+For each gap, verify, correct, narrow, qualify with a stated basis, retract, remove,
+or leave it explicitly unresolved. Carry changed premises through dependent
+recommendations, implementation, next actions, and completion reports. An unchanged
+conclusion needs surviving support. Complete feasible, authorized work required
+by the task. Otherwise state the blocker, its impact, and the next necessary check.
 
-Unfamiliar notation, useful abstractions, idioms, disclosed fiction, hypotheses,
-estimates, and persuasion are not failures by themselves. Require clarifiable
-meaning and appropriate support: empirical claims admit discriminating checks;
-definitions, proofs, interpretations, and value judgments need their appropriate
-premises or criteria. Do not demand empirical falsification of every statement.
+Keep the workflow's authority boundaries. Review does not authorize edits or
+publication. A read-only leaf reviewer must not edit, post, or delegate. Report
+unresolved premises to the orchestrator. Use an independent critic only when the
+parent workflow permits it, and assess its evidence rather than treating agreement
+as validation.
 
-## 3. Trace the failure to the way you conducted the task
+## Verify and deliver
 
-The underlying **enterprise** is the activity you are actually carrying out.
-Compare the intended activity—investigating, explaining, repairing, evaluating,
-or reporting—with the observable choices you make. Detect substitution by what
-those choices accomplish; you do not need to infer a hidden motive or assign a
-category before correcting it.
+After the last substantive or prose edit, check every new factual clause and
+reported action, including proposed fixes and your own review comments. Preserve
+source qualifications. A check that can help distinguish causes is not guaranteed
+to settle them. Correct or remove unsupported claims introduced during the repair.
 
-Before continuing substantial work, ask:
+Finish when the original question is answered at the supported scope, material
+claims match evidence, and consequential unknowns remain explicit. No feasible,
+authorized work required by the acceptance criteria can remain undone. Stop
+unrelated activity once those criteria are satisfied.
 
-- **What will this action establish or change?** Name the acceptance criterion
-  it advances or the uncertainty it resolves, and how possible results affect
-  the next decision. If it does neither, stop or replace it. A necessary setup
-  step can qualify by enabling a specific required check; explain that dependency.
-  A well-chosen experiment can advance the task by refuting a hypothesis.
-- **Does this change respect the actual contract?** For development work, inspect
-  the relevant preconditions, normal and error paths, state changes, ownership,
-  and affected callers. Check the changed behavior against the requirement. If
-  you skipped a material path, made unrelated edits, or added complexity without
-  a task-relevant reason, repair that gap and check the affected behavior. A
-  clean build alone does not establish that the requested behavior is correct.
-- **Am I doing the decisive work?** Repeated searches, benchmarks, refactors,
-  plans, formatting, or status reports can leave the user's question untouched.
-  Select a relevant discriminating check or required repair. Perform it when
-  feasible and authorized; rewriting “I should check” is not completion of a task
-  whose answer requires that check.
-- **Am I learning from results?** Inspect outcomes and failures before the next
-  action. If a check fails, determine whether execution failed or the claim was
-  contradicted, and revise the approach accordingly. Do not repeat a check
-  without a changed input, a reason to expect new information, or a relevant
-  repeatability question. Do not substitute an easier check and report the
-  original criterion as satisfied.
-- **Am I preserving a conclusion or an impression?** Look for ignored
-  counterevidence, shifting criteria, assurances of diligence without work,
-  unsupported concessions, and claims of understanding that I cannot explain.
-  Restore the governing criterion and evidence; let the conclusion change.
-  Correct the reported process as well as the result, even if a guess was right.
-- **Am I hiding an unresolved state?** Separate completed work from plans,
-  failed attempts, blocked checks, and work outside scope. Complete necessary
-  authorized work that remains feasible. Otherwise state the specific obstacle,
-  its effect on the answer, and the next check needed. Do not call an unresolved
-  task finished or expand it into unnecessary work to appear thorough.
-
-For a detected failure, distinguish its **symptom** from the **process that
-produced or preserved it**. Which evidence, criterion, or outcome should have
-changed the assertion or action but did not? Identify that point in the record
-and explain how it led to the defect. “I was careless,” “I hallucinated,” or “I
-wanted to please you” alone does not establish a cause. If the record explains
-only the missed constraint, stop there; an unknown internal cause remains unknown.
-
-For example, rerunning a throughput benchmark cannot settle post-invalidation
-freshness when it never exercises invalidation. The process failure is using a
-check of throughput to discharge a requirement about freshness. Restore that
-constraint by inspecting the ordering contract and relevant read/invalidation
-behavior. A passing targeted case still does not prove every interleaving safe.
-
-Use pattern names only when they help select a check or repair:
-
-- **Falsity and lying:** inspect the assertion against the record and correct it;
-  do not infer deliberate deception from an error or absent evidence.
-- **Humbug, phoniness, fakery, and quackery:** compare represented diligence,
-  knowledge, evidence, and method validation with actual work and support.
-  Remove false assurances or manufactured support and do the missing inquiry.
-- **Pleonasm, nonsense, gibberish, and the unclarifiable:** apply the meaning and
-  information check. Recover an available definition or source; preserve useful
-  qualifications and remove unsupported interpretations or empty premises.
-
-These overlapping reminders are not a taxonomy from the essay and do not require
-a classification step. Correct an honest error without declaring it bullshit.
-A label or a speculative account of motives supplies neither evidence nor a repair.
-
-## 4. Establish and execute the recovery enterprise
-
-For a demonstrated material defect, establish a bounded undertaking to restore
-the connection to evidence and the intended outcome. Define the defect, governing
-constraint, necessary corrective actions, and what result would demonstrate
-sufficient repair. Keep this compact; naming an enterprise is not progress. Reconstruct:
-
-`intended outcome → actual action → observed failure → missed check or constraint
-→ corrective action`
-
-Use the available record to identify what should change in your approach. If
-the cause is unknown, select the observation that would distinguish plausible
-causes. Correct a demonstrated defect when feasible even if its deeper cause
-remains unknown. Reflection must lead to a concrete repair or a necessary next
-check; an apology or promise to be more careful is insufficient.
-
-For each material gap, **verify, correct, narrow, qualify with a stated basis,
-retract, remove, or explicitly leave unresolved**. Choose the disposition that
-fits the evidence. If a hypothesis or assumption is useful, state its basis and
-which conclusion is conditional on it. If evidence is unavailable, identify the
-missing premise and its consequence rather than inventing an answer.
-
-Carry the repair through the work. Recompute conclusions that depend on a changed
-number, definition, premise, or result. Revise the recommendation, implementation,
-next action, and completion report wherever affected and authorized. An unchanged
-conclusion needs an independent surviving basis. Changing tone, assigning labels,
-apologizing, or proposing work does not substitute for the required correction.
-
-After the last substantive or stylistic edit, inspect each new factual clause,
-including those inside proposed fixes. Tie it to supplied evidence, a checked
-result, or a valid derivation. Otherwise remove it or make the necessary condition
-explicit. Unspecified, unavailable, and uninspected do not mean absent: an
-excerpt's silence does not establish what the full source omits. Preserve the
-source's qualifications; a check that could help distinguish causes is not
-guaranteed to settle them. Do not repair one unsupported claim by introducing another.
-
-Finish when the following observable conditions hold:
-
-- Material claims and reports of work match their actual basis and checked scope.
-- Unresolved premises and their consequences are explicit; dependent conclusions
-  do not quietly survive a retraction.
-- The original question is answered at the supported level, and no feasible,
-  authorized work required for that answer or acceptance criterion remains undone.
-- The correction contains no new unsupported facts, false process claims, or
-  meaningless premises. Additional activity would require a task-relevant reason.
-
-For an explicit audit or user-triggered recovery, briefly report the exact
-defect, its evidence and impact, the supported process cause or unresolved causal
-question, the correction made, and any remaining necessary action or limit.
-Deliver the corrected answer or artifact and resume the original task within
-scope. For an embedded check, deliver the workflow's artifact without a ritual
-audit report. Do not claim general truthfulness from a completed checklist.
-
-Keep the workflow's authority boundaries: reviewing an artifact does not
-authorize editing it or posting feedback. A read-only leaf reviewer must not
-edit, post, or delegate; report the unresolved premise to the orchestrator. Use an
-independent critic for a specific unresolved issue only when the parent workflow
-permits it; agreement is not validation.
+For an explicit audit or user-triggered recovery, briefly report the exact defect,
+evidence and impact, supported process cause or unknown cause, correction, and
+remaining limit. Deliver the corrected answer or artifact and resume the original
+task. For an embedded check, deliver the workflow's artifact without an audit
+ceremony. A completed checklist does not establish general truthfulness.
