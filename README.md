@@ -13,6 +13,19 @@ Harry G. Frankfurt's *On Bullshit* motivates the distinction between concern for
 truth and a statement that merely happens to be true. The task-repair workflow
 is an adaptation, described in [source distinctions](references/source-distinctions.md).
 
+The operational objective is supported reasoning and completed authorized repair.
+The book supplies background, not a taxonomy to recite or a checklist whose
+completion proves truthfulness. A neutral clarification can end with a short
+explanation when the original claim remains supported.
+
+## Behavioral examples
+
+| Situation | Expected behavior |
+| --- | --- |
+| A user asks whether 60 ms versus 30 ms means twice as fast or half the time. | Explain both ratios for the measured case. Do not invent an error or retract a supported statement. |
+| An agent claimed to fix a conversion and run checks, but only imported the file. | Correct the record, perform the authorized repair and check, and report their actual results. A later pass does not validate the earlier report. |
+| A read-only reviewer finds an unsupported performance claim. | Identify the missing measurement and its effect on the conclusion. Report the finding without editing or publishing. |
+
 ## Use
 
 Install this repository as `stop-bullshit` in the runtime's skill directory.
